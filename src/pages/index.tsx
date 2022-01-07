@@ -5,7 +5,7 @@ import useNextBlurhash from 'use-next-blurhash';
 import styles from '@/styles/Home.module.css';
 
 export default function Home() {
-  const [blurDataUrl] = useNextBlurhash(`L*Ly+PWER+j[~WNeayWXtRWXjZoK`);
+  const [blurDataUrl] = useNextBlurhash(`L*Ly+PWER+j[~WNeayWXtRWXjZoK`, 20, 10);
 
   return (
     <div className={styles.container}>
