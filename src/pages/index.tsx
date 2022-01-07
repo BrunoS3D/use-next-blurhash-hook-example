@@ -6,7 +6,6 @@ import styles from '@/styles/Home.module.css';
 
 export default function Home() {
   const [blurDataUrl] = useNextBlurhash(`L*Ly+PWER+j[~WNeayWXtRWXjZoK`, 20, 10);
-
   return (
     <div className={styles.container}>
       <Head>
@@ -30,7 +29,7 @@ export default function Home() {
             width="720"
             height="360"
             placeholder="blur"
-            blurDataURL={blurDataUrl}
+            blurDataURL={blurDataUrl || `/lorem-picsum.jpg`}
           />
         </div>
       </main>
